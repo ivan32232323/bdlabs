@@ -12,34 +12,31 @@ pip install -r requirements.txt
 
 ### 2 - Запустити сервер:
 ```bash
-uvicorn app.main:app 
+uvicorn app.main:app --reload 
 ```
 
 ## Тестування функціонування сервісів
 
-### GET: Отримати список всіх зв'язків користувач-роль
-<img src="./test/GETUserRole.jpg" alt="GET: Отримати список всіх зв'язків користувач-роль" >
+### GET: Отримує конкретну роль із бази даних за її ID
+<img src="./test/Test Get.png" alt="GET: Отримує конкретну роль із бази даних за її ID" width="100%"/>
 
-### POST: Створити зв'язок "користувач-роль"
-<img src="./test/POSTUserRole.jpg" alt="POST: Створити зв'язок користувач-роль" >
+### GET: Отримує один дозвіл з бази даних за його ID
+<img src="./test/Test Get1.png" alt="Отримує один дозвіл з бази даних за його ID" width="100%"/>
 
-### GET: Отримати конкретний зв'язок "користувач-роль" за Profile ID та Role ID
-<img src="./test/GETUserRoleID.jpg" alt="Отримати конкретний зв'язок користувач-роль за Profile ID та Role ID" >
+### POST: Створює нову роль у базі даних
+<img src="./test/Test Post.png" alt="POST: Створює нову роль у базі даних" width="100%"/>
 
-### DELETE: Видалити зв'язок "користувач-роль"
-<img src="./test/DELETEUserRole.jpg" alt="DELETE: Видалити зв'язок користувач-роль" >
+### PUT: Оновлює існуючу роль у базі даних за її ID
+<img src="./test/Test Put.png" alt="Оновлює існуючу роль у базі даних за її ID" width="100%"/>
 
-### GET: Отримати список всіх профілів
-<img src="./test/GETProfile.jpg" alt="GET: Отримати список всіх профілів" >
+### PUT: Оновлює існуючий дозвіл у базі за його ID
+<img src="./test/Test Put1.png" alt="Оновлює існуючий дозвіл у базі за його ID" width="100%"/>
 
-### POST: Створити новий профіль
-<img src="./test/POSTProfile.jpg" alt="POST: Створити новий профіль" >
+### DELETE: Видаляє роль із бази даних за її унікальним ID
+<img src="./test/Test Delete.png" alt="Видаляє роль із бази даних за її унікальним ID" width="100%"/>
 
-### GET: Отримати профіль за ID
-<img src="./test/GETProfileID.jpg" alt="GET: Отримати профіль за ID" >
+### DELETE: Видаляє дозвіл з системи за його ID
+<img src="./test/Test Delete1.png" alt="DELETE: Видаляє дозвіл з системи за його ID" width="100%"/>
 
-### PUT: Оновити профіль за ID
-<img src="./test/PUTProfileID.jpg" alt="PUT: Оновити профіль за ID" >
-
-### DELETE: Видалити профіль за ID
-<img src="./test/DELETEProfileID.jpg" alt="Видалити профіль за ID" >
+### POST: Створює новий дозвіл у системі
+<img src="./test/Test Post1.png" alt="POST: Створює новий дозвіл у системі" width="100%"/>
